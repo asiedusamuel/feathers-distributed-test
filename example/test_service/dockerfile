@@ -1,0 +1,12 @@
+FROM  node:14-buster
+
+MAINTAINER Luc Claustres <luc.claustres@kalisio.xyz>
+
+WORKDIR /opt/app
+COPY . /opt/app 
+
+RUN npm install
+
+EXPOSE 3031
+
+CMD [ "npm", "start" ]

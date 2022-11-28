@@ -1,4 +1,4 @@
-version: '2'
+version: "2"
 
 services:
   gateway:
@@ -23,6 +23,14 @@ services:
     image: feathers/service2
     ports:
       - 3032:3032
+    networks:
+      - feathers
+  service3:
+    build: ./test_service
+    container_name: service3
+    image: feathers/service3
+    ports:
+      - 3033:3033
     networks:
       - feathers
 

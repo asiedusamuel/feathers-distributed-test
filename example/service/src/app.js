@@ -8,7 +8,7 @@ import feathers from '@feathersjs/feathers';
 import express from '@feathersjs/express';
 import configuration from '@feathersjs/configuration';
 import socketio from '@feathersjs/socketio';
-import distribution from '../../../lib/index.js';
+import distribution from './lib/index.js';
 import middleware from './middleware/index.js';
 import services from './services/index.js';
 import appHooks from './app.hooks.js';
